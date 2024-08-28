@@ -1,0 +1,15 @@
+Task 3: Write a simple script to automate file creation and deletion.
+
+for i in {1..5}:
+do touch file_$i
+echo "File file_$i is created."
+done
+
+ls
+
+for i in {1..5}:
+do rm file_$i
+echo "File file_$i is deleted."
+done
+
+ls 
