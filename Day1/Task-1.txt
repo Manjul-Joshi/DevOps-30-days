@@ -1,0 +1,47 @@
+Task 1: Set up a Linux environment (e.g., Ubuntu in VirtualBox or WSL). 
+
+WSL Installation:
+
+- By default, WSL is deactivated on your PC or workstation. In this first step we are going to activate it using the command line. 
+Open the Start menu by pressing the Windows-Key and search for “PowerShell”. Now right click on Windows PowerShell and click on “Run as administrator”.  
+
+-You may need to confirm this in a popup menu by clicking on “Yes” 
+
+Now enable WSL by pasting in the following command: 
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 
+
+Now it’s time to set the newest version of WSL, namely WSL 2, as the default. This can be archived by opening another PowerShell terminal as administrator (as shown earlier) and executing the following command: 
+
+wsl --set-default-version 2
+
+
+Ubuntu Installation :
+
+- You can now install everything you need to run WSL with a single command. Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting “Run as administrator”, enter the wsl — install command, then restart your machine.
+
+wsl --install
+This command will enable the features necessary to run WSL and install the Ubuntu distribution of Linux.
+
+
+If you’re running an older build, or just prefer not to use the install command and would like step-by-step directions, see WSL manual installation steps for older versions.
+
+Change the default Linux distribution installed
+By default, the installed Linux distribution will be Ubuntu. This can be changed using the -d flag.
+
+To change the distribution installed, enter: wsl --install -d <Distribution Name>.
+
+Replace <Distribution Name> with the name of the distribution you would like to install.
+
+To see a list of available Linux distributions available for download through the online store, enter: wsl --list --online or wsl -l -o.
+
+To install additional Linux distributions after the initial install, you may also use the command: wsl --install -d <Distribution Name>.
+
+WSL Commands :
+
+Install:
+wsl --install
+List available Linux distributions
+wsl --list --online
+List installed Linux distributions
+wsl --list --verbose
