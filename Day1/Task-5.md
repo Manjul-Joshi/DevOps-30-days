@@ -1,6 +1,9 @@
 ## Task 5: Read and process user input in a script.
 
 - For simple user input with a prompt text (-p) :
+Task 5: Read and process user input in a script.
+
+- For simple user input with a prompt text (-p) :
 
 ```bash
 read -p "Enter your name : " name
@@ -8,13 +11,13 @@ echo "Hello $name."
 ```
 
 - For password entry (-s) :
-
 ```bash
 read -sp "Enter your password : " password
 echo "Password entered successfully. Password is $password."
 ```
 
 - For changing the seperator for input variable (IFS) :
+
 ```bash
 IFS="," read -p "Enter name, age, city and country : " name age city country
 echo "Name : $name"
