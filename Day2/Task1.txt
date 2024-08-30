@@ -1,0 +1,28 @@
+Task 1: Create, copy, move, and delete files and directories using Bash.
+
+- Creating files and directories :
+
+mkdir mac1 // for making directories
+
+touch mtxt1.txt // for making files
+
+- Copying files and directories :
+
+cp mktxt.txt mktxt1.txt // copy the files
+
+cp -r mac1 mac // copy the directories
+
+- Moving files and directories :
+
+mv mktxt1.txt mac1/  // move file to directory
+mv mac1 mac2  // move directory and rename 
+ 
+ cd mac2 
+
+- Deleting files and directories :
+
+rm mktxt1.txt  // remove the file.
+cd ..
+rm -r mac2  // remove the directory
+
+

@@ -1,0 +1,51 @@
+Task 2: Write a script to batch rename files based on a pattern.
+
+#!/bin/sh
+
+read -p "Enter the pattern : " pattern
+read -p "Enter the pattern to replace : " replace
+
+- for creating the patterned files :
+
+ for i in {0..5}; do
+ touch $pattern$i.txt
+ done
+
+directory="."
+
+for i in $directory/*$pattern*; do 
+if [ -f "$i" ]; then 
+new_name=$(echo "$i" | sed "s/$pattern/$replace/")
+mv "$i" "$new_name"
+echo "Change for $i to $new_name"
+fi
+done
+
+'''
+The line new_name=$(echo "$i" | sed "s/$pattern/$replace/") is used to generate a new filename by replacing a specific pattern in the original filename with a different string. Here’s a detailed explanation of how it works:
+
+Breakdown of the Command
+echo "$i":
+
+This command outputs the current filename stored in the variable i.
+For example, if i is ./ma0, echo "$i" will output ./ma0.
+sed "s/$pattern/$replace/":
+
+sed is a stream editor that can perform basic text transformations on an input stream (a file or input from a pipeline).
+The "s/$pattern/$replace/" part is a sed substitution command.
+s stands for substitution.
+$pattern is the text pattern you want to replace. It gets replaced with the value stored in the variable pattern (e.g., ma).
+$replace is the text you want to replace the pattern with. It gets replaced with the value stored in the variable replace (e.g., vhfgd).
+The / characters are delimiters that separate the parts of the substitution command.
+For example, if pattern is ma and replace is vhfgd, and i is ./ma0, then sed "s/$pattern/$replace/" will replace ma with vhfgd in the string, resulting in ./vhfgd0.
+
+new_name=$(...):
+
+This part assigns the output of the entire command inside $(...) to the variable new_name.
+In the example, new_name would be set to ./vhfgd0.
+Summary
+Before substitution: i = ./ma0
+After substitution: new_name = ./vhfgd0
+This line of code effectively changes the old filename (i) into the new filename (new_name) by replacing the specified pattern with a new string.
+
+'''
