@@ -1,4 +1,4 @@
-Task 4: Implement error handling in your scripts. 
+## Task 4: Implement error handling in your scripts. 
 ```bash
 #!/bin/bash
 ls /nonexistent_directory
