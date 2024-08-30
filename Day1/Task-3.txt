@@ -13,3 +13,4 @@ echo "File file_$i is deleted."
 done
 
 ls 
+
