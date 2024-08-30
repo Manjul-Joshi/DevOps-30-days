@@ -1,0 +1,10 @@
+Line one: The quick brown fox jumps over the lazy dog.
+Line two: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Line three: This is a simple text file for testing purposes.
+Line four: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Line five: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+Line six: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Line seven: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Line eight: Simple is better than complex.
+Line nine: Complex is better than complicated.
+Line ten: Explicit is better than implicit.

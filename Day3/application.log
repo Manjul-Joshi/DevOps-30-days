@@ -1,0 +1,8 @@
+2024-08-29 10:14:23 INFO User login successful for user: alice
+2024-08-29 10:15:42 ERROR Failed to connect to database
+2024-08-29 10:16:01 WARNING Disk space low on /dev/sda1
+2024-08-29 10:16:23 INFO User logout successful for user: bob
+2024-08-29 10:17:15 ERROR Timeout while accessing service
+2024-08-29 10:18:43 INFO User login successful for user: charlie
+2024-08-29 10:19:55 WARNING Memory usage exceeds threshold
+2024-08-29 10:21:18 ERROR Failed to load configuration file
