@@ -1,5 +1,5 @@
 Task 4: Implement error handling in your scripts. 
-
+```bash
 #!/bin/bash
 ls /nonexistent_directory
 if [ $? -ne 0 ]
@@ -9,7 +9,7 @@ then
 else
   echo "Command Successful"
 fi
-
+```
 This script is a basic Bash script that checks the success or failure of a command (`ls /nonexistent_directory`) and takes action based on whether the command succeeds or fails. Let's break it down step by step:
 
 ### Script Breakdown
